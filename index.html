@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ismail Mahmoud Mohamed | Data Scientist & Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Ismail Mahmoud Mohamed - Data Science & Data Analytics Trainee. Experienced in Python, SQL, Power BI, Machine Learning, EDA, and Data Modeling." />
+  <meta name="keywords" content="Ismail Mahmoud, Data Scientist, Data Analyst, Power BI, Python, SQL, Machine Learning, Portfolio, DEPI, ITI, NTI" />
+  <meta name="author" content="Ismail Mahmoud Mohamed" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ismail Mahmoud Mohamed | Data Science & Analytics Portfolio" />
+  <meta property="og:description" content="Turning complex data into actionable business intelligence through Python, SQL, Power BI, and Machine Learning." />
+  <meta property="og:image" content="assets/images/ismail-profile.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <canvas id="particlesCanvas" class="particles-canvas"></canvas>
+    <div class="glow glow-cyan"></div>
+    <div class="glow glow-purple"></div>
+    <div class="glow glow-emerald"></div>
+    <div class="bg-grid-pattern"></div>
+    <div class="ambient-dust"></div>
+  </div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ismail Mahmoud Home">
+        <span class="logo-code">&lt;</span>
+        <span class="logo-text">IM</span>
+        <span class="logo-accent">.Data</span>
+        <span class="logo-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="#certificates" class="nav-link" data-i18n="nav_certificates">Certificates</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Lang switch + CV + Hamburger) -->
+        <!-- FX / Animation Toggle Button -->
+        <button id="fxToggle" class="btn-icon-toggle fx-btn" aria-label="Toggle Animation" title="Background FX / حركة الخلفية">
+          <i data-lucide="sparkles"></i>
+          <span class="fx-label" id="fxLabel">FX</span>
+        </button>
+
+        <!-- Language Switcher Button -->
+        <button id="langToggle" class="btn-icon-toggle" aria-label="Switch Language" title="تغيير اللغة إلى العربية">
+          <i data-lucide="globe"></i>
+          <span class="lang-label" id="langLabel">عربي</span>
+        </button>
+
+        <a href="assets/docs/Ismail-Mahmoud-CV.pdf" download class="btn btn-sm btn-outline nav-cv-btn" data-i18n="btn_resume">
+          <i data-lucide="file-down"></i>
+          <span>CV</span>
+        </a>
+
+        <a href="#contact" class="btn btn-sm btn-primary nav-talk-btn" data-i18n="btn_lets_talk">
+          <span>Let's Talk</span>
+          <i data-lucide="send"></i>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="badge-status">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero_status">Open to Data Science & Analytics Opportunities</span>
+          </div>
+
+          <h2 class="hero-greeting" data-i18n="hero_greeting">Hello, I'm</h2>
+          <h1 class="hero-name">
+            Ismail Mahmoud <span class="text-gradient">Mohamed</span>
+          </h1>
+
+          <!-- Dynamic Typing Title -->
+          <div class="hero-typing-box">
+            <span class="typing-prefix" data-i18n="hero_i_am">I am a</span>
+            <span class="typing-text" id="typingText">Data Scientist</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Description -->
+          <p class="hero-bio" data-i18n="hero_bio">
+            Data Science & Analytics specialist skilled in transforming complex, real-world datasets into strategic business intelligence. Experienced in end-to-end pipelines: EDA, data cleaning, statistical modeling, machine learning, and interactive Power BI dashboards.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span data-i18n="hero_btn_projects">Explore Projects</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+
+            <a href="assets/docs/Ismail-Mahmoud-CV.pdf" download class="btn btn-secondary btn-lg">
+              <i data-lucide="download"></i>
+              <span data-i18n="hero_btn_cv">Download CV</span>
+            </a>
+
+            <a href="https://wa.me/201094360362" target="_blank" rel="noopener" class="btn btn-outline btn-lg whatsapp-btn">
+              <i data-lucide="message-circle"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Social / Professional Links -->
+          <div class="hero-socials">
+            <span class="socials-label" data-i18n="hero_connect">Connect with me:</span>
+            <div class="social-links-row">
+              <a href="https://linkedin.com/in/ismaeilmahmoud" target="_blank" rel="noopener" class="social-chip" title="LinkedIn Profile">
+                <i data-lucide="linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/Ismail-Mahmoud-Mohamed" target="_blank" rel="noopener" class="social-chip" title="GitHub Profile">
+                <i data-lucide="github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="mailto:ismaeilabozaid7497@gmail.com" class="social-chip" title="Send Email">
+                <i data-lucide="mail"></i>
+                <span>Email</span>
+              </a>
+              <a href="tel:+201094360362" class="social-chip" title="Call Me">
+                <i data-lucide="phone"></i>
+                <span>+20 109 436 0362</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Image Column -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <!-- Decorative Glow Rings -->
+            <div class="glow-ring glow-ring-1"></div>
+            <div class="glow-ring glow-ring-2"></div>
+
+            <div class="profile-card">
+              <div class="profile-img-container">
+                <img src="assets/images/ismail-profile.jpg" alt="Ismail Mahmoud Mohamed - Data Scientist & Data Analyst" class="profile-img" />
+                <div class="profile-gradient-overlay"></div>
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge badge-top-left">
+                <div class="badge-icon python-badge"><i data-lucide="terminal"></i></div>
+                <div class="badge-info">
+                  <span class="badge-title">Python & SQL</span>
+                  <span class="badge-sub">Data Pipelines & EDA</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-right">
+                <div class="badge-icon powerbi-badge"><i data-lucide="bar-chart-2"></i></div>
+                <div class="badge-info">
+                  <span class="badge-title">Power BI & DAX</span>
+                  <span class="badge-sub">Executive Dashboards</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon award-badge"><i data-lucide="award"></i></div>
+                <div class="badge-info">
+                  <span class="badge-title">100% NTI Honor</span>
+                  <span class="badge-sub">Advanced Analytics</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Tech Strip -->
+            <div class="hero-tech-strip">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">Power BI</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">Machine Learning</span>
+              <span class="tech-pill">DAX</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== KEY IMPACT METRICS ==================== -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon"><i data-lucide="database"></i></div>
+            <div class="metric-number" data-target="45593">45,593+</div>
+            <div class="metric-label" data-i18n="metric_records">Records Processed & Cleaned</div>
+            <div class="metric-sub" data-i18n="metric_records_sub">99.2% Data Cleanliness Rate</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon"><i data-lucide="users"></i></div>
+            <div class="metric-number" data-target="53000">53,000+</div>
+            <div class="metric-label" data-i18n="metric_encounters">Patient Encounters Modeled</div>
+            <div class="metric-sub" data-i18n="metric_encounters_sub">Across 5,855+ Providers</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon"><i data-lucide="trending-up"></i></div>
+            <div class="metric-number" data-target="23000">23,000+</div>
+            <div class="metric-label" data-i18n="metric_car_sales">Car Sales Records Analyzed</div>
+            <div class="metric-sub" data-i18n="metric_car_sales_sub">Pricing & Regional Trends</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon"><i data-lucide="code-2"></i></div>
+            <div class="metric-number" data-target="500">500+</div>
+            <div class="metric-label" data-i18n="metric_icpc">Algorithmic Problems Solved</div>
+            <div class="metric-sub" data-i18n="metric_icpc_sub">Codeforces & ICPC Contests</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tag_about">DISCOVER MY STORY</span>
+          <h2 class="section-title"><span data-i18n="about_title_1">About</span> <span class="text-gradient" data-i18n="about_title_2">Me</span></h2>
+          <p class="section-subtitle" data-i18n="about_subtitle">Academic foundation combined with intensive practical training and real-world analytical modeling.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Education Card -->
+          <div class="about-card education-card">
+            <div class="card-glass-header">
+              <div class="header-icon"><i data-lucide="graduation-cap"></i></div>
+              <div>
+                <h3 class="card-title" data-i18n="edu_title">Education & Academic Excellence</h3>
+                <span class="card-badge">Assiut University</span>
+              </div>
+            </div>
+
+            <div class="edu-body">
+              <div class="edu-item">
+                <div class="edu-time">Sep 2024 – Present</div>
+                <h4 class="edu-degree" data-i18n="edu_degree">Bachelor of Science in Computer Science</h4>
+                <p class="edu-faculty" data-i18n="edu_faculty">Faculty of Computers and Information — Assiut University</p>
+                <div class="gpa-pill">
+                  <i data-lucide="star"></i>
+                  <strong data-i18n="edu_gpa">GPA: 3.71 / 4.0</strong>
+                  <span data-i18n="edu_grade">(Excellent with Honors)</span>
+                </div>
+              </div>
+
+              <div class="about-narrative">
+                <p data-i18n="about_p1">
+                  I am a passionate Data Science and Data Analytics specialist located in Cairo, Egypt. My focus is on turning raw, unstructured data into clear, actionable stories that empower stakeholders to optimize performance and reduce operational costs.
+                </p>
+                <p data-i18n="about_p2">
+                  With a solid Computer Science background, I combine rigorous algorithmic problem-solving skills with practical expertise in exploratory data analysis (EDA), statistical modeling, machine learning algorithms, and interactive business intelligence dashboards.
+                </p>
+              </div>
+
+              <div class="quick-facts-row">
+                <div class="fact-item">
+                  <i data-lucide="map-pin"></i>
+                  <span data-i18n="fact_location">Cairo, Egypt</span>
+                </div>
+                <div class="fact-item">
+                  <i data-lucide="languages"></i>
+                  <span data-i18n="fact_languages">Arabic (Native) | English (Proficient)</span>
+                </div>
+                <div class="fact-item">
+                  <i data-lucide="briefcase"></i>
+                  <span data-i18n="fact_status">Available for Full-time & Remote</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Core Analytical Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon icon-teal"><i data-lucide="database"></i></div>
+              <div class="pillar-content">
+                <h4 data-i18n="pillar_1_title">Data Cleaning & Wrangling</h4>
+                <p data-i18n="pillar_1_desc">Handling missing values, outlier treatment, feature scaling, and preprocessing large datasets in Python (Pandas, NumPy) and SQL Server.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon icon-cyan"><i data-lucide="pie-chart"></i></div>
+              <div class="pillar-content">
+                <h4 data-i18n="pillar_2_title">Business Intelligence & DAX</h4>
+                <p data-i18n="pillar_2_desc">Crafting relational data models (Star Schema), calculated measures using DAX, and executive Power BI / Tableau dashboards with rich KPIs.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon icon-purple"><i data-lucide="cpu"></i></div>
+              <div class="pillar-content">
+                <h4 data-i18n="pillar_3_title">Machine Learning & Modeling</h4>
+                <p data-i18n="pillar_3_desc">Supervised and unsupervised models, feature importance extraction, regression, classification, neural networks, and statistical inference.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon icon-amber"><i data-lucide="code"></i></div>
+              <div class="pillar-content">
+                <h4 data-i18n="pillar_4_title">Competitive Problem Solving</h4>
+                <p data-i18n="pillar_4_desc">Over 500 algorithmic challenges solved on Codeforces, top 30% ranking in national ICPC qualification contests, ensuring optimal code performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tag_experience">CAREER TRAJECTORY</span>
+          <h2 class="section-title"><span data-i18n="exp_title_1">Professional</span> <span class="text-gradient" data-i18n="exp_title_2">Experience</span></h2>
+          <p class="section-subtitle" data-i18n="exp_subtitle">Internships, specialized governmental initiatives, and competitive training.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Item 1: DEPI -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="company-badge">DEPI</span>
+                  <h3 class="role-title" data-i18n="exp1_role">Data Science Trainee</h3>
+                  <h4 class="company-name" data-i18n="exp1_company">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i data-lucide="calendar"></i> Aug 2026 – Present</span>
+                  <span class="timeline-loc"><i data-lucide="map-pin"></i> Cairo, Egypt</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="exp1_b1">Cleaned and analyzed complex datasets across 2 major projects using Python (Pandas, NumPy, Matplotlib).</li>
+                <li data-i18n="exp1_b2">Analyzed 23K+ automotive sales records to uncover pricing dynamics, manufacturer trends, and regional purchasing behaviors.</li>
+                <li data-i18n="exp1_b3">Analyzed 3.5K+ coffee transactions to identify peak rush hours, sales velocity, and payment method patterns.</li>
+                <li data-i18n="exp1_b4">Expanding capabilities in advanced SQL, Machine Learning pipelines, and predictive modeling.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>SQL</span><span>Predictive Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: RAAKAA LTD -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="company-badge badge-blue">RAAKAA LTD</span>
+                  <h3 class="role-title" data-i18n="exp2_role">Data Entry & Administrative Specialist</h3>
+                  <h4 class="company-name" data-i18n="exp2_company">RAAKAA LTD — Oman</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i data-lucide="calendar"></i> May 2026 – Present</span>
+                  <span class="timeline-loc"><i data-lucide="map-pin"></i> Oman (Remote / Operations)</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="exp2_b1">Managed, validated, and maintained commercial catalog data utilizing Zid platform, Airtable, and Microsoft Excel.</li>
+                <li data-i18n="exp2_b2">Entered, organized, updated, and audited high-volume product listings, inventory quantities, and financial sales records.</li>
+                <li data-i18n="exp2_b3">Streamlined operational reporting workflows, ensuring 100% data fidelity across e-commerce channels.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Zid Platform</span><span>Airtable</span><span>MS Excel</span><span>Inventory Management</span><span>Data Validation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: ITI -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="company-badge badge-purple">ITI</span>
+                  <h3 class="role-title" data-i18n="exp3_role">AI & Machine Learning Trainee</h3>
+                  <h4 class="company-name" data-i18n="exp3_company">Information Technology Institute (ITI)</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i data-lucide="calendar"></i> Jul 2026 – Aug 2026</span>
+                  <span class="timeline-loc"><i data-lucide="clock"></i> 120 Intensive Hours</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="exp3_b1">Developed an end-to-end Food Delivery analytics and machine learning solution using Python, applying data preprocessing, EDA, and predictive modeling.</li>
+                <li data-i18n="exp3_b2">Mastered Machine Learning algorithms, Deep Learning concepts, Neural Networks, Linear Algebra, and Statistical Inference.</li>
+                <li data-i18n="exp3_b3">Graduated successfully with 120 hours of hands-on project-based engineering.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Machine Learning</span><span>Deep Learning</span><span>Neural Networks</span><span>Python</span><span>Linear Algebra</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: NTI -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-featured">
+              <div class="timeline-header">
+                <div>
+                  <span class="company-badge badge-emerald">NTI (100% Honor)</span>
+                  <h3 class="role-title" data-i18n="exp4_role">Data Analyst Trainee</h3>
+                  <h4 class="company-name" data-i18n="exp4_company">National Telecommunication Institute (NTI)</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i data-lucide="calendar"></i> Jun 2026 – Aug 2026</span>
+                  <span class="timeline-loc"><i data-lucide="award"></i> Certified with 100% Score</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="exp4_b1">Engineered a multi-page interactive Healthcare Analytics Dashboard in Power BI analyzing provider operations, patient encounters, clinical conditions, and financial metrics.</li>
+                <li data-i18n="exp4_b2">Applied SQL Server, Power Query, and Power BI for data extraction, transformation, data modeling (Star Schema), and DAX measures.</li>
+                <li data-i18n="exp4_b3">Completed 120 intensive hours and received top certificate with a perfect 100% score.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Power BI</span><span>DAX</span><span>SQL Server</span><span>Data Modeling</span><span>Excel</span><span>Healthcare Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: ICPC -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="company-badge badge-amber">ICPC</span>
+                  <h3 class="role-title" data-i18n="exp5_role">Competitive Programmer</h3>
+                  <h4 class="company-name" data-i18n="exp5_company">International Collegiate Programming Contest (ICPC)</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i data-lucide="calendar"></i> 2025 – 2026</span>
+                  <span class="timeline-loc"><i data-lucide="trophy"></i> Top 30% National Qualifier</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="exp5_b1">Solved over 500 algorithmic and mathematical problems on Codeforces, sharpening analytical thinking and algorithm efficiency.</li>
+                <li data-i18n="exp5_b2">Ranked among the top 30% in the national ICPC ACPC qualification contest, receiving Honorable Mention.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>C++</span><span>Data Structures</span><span>Algorithms</span><span>Problem Solving</span><span>Codeforces</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tag_projects">HANDS-ON PORTFOLIO</span>
+          <h2 class="section-title"><span data-i18n="proj_title_1">Featured</span> <span class="text-gradient" data-i18n="proj_title_2">Projects</span></h2>
+          <p class="section-subtitle" data-i18n="proj_subtitle">Real-world business analytics, machine learning pipelines, and executive dashboards with verified metrics.</p>
+        </div>
+
+        <!-- Project Filter Tabs -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All Projects</button>
+          <button class="filter-btn" data-filter="bi" data-i18n="filter_bi">Power BI & Dashboards</button>
+          <button class="filter-btn" data-filter="ml" data-i18n="filter_ml">Machine Learning & EDA</button>
+          <button class="filter-btn" data-filter="scraping" data-i18n="filter_scraping">Web Scraping & ETL</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Healthcare Analytics Dashboard (STAR PROJECT) -->
+          <div class="project-card card-featured-border" data-category="bi ml">
+            <div class="project-badge-top">
+              <span class="badge-featured" data-i18n="badge_star_project">★ Featured Capstone</span>
+            </div>
+            <div class="project-media-wrapper">
+              <img src="assets/images/healthcare-menu.jpg" alt="Healthcare Analytics Dashboard" class="project-cover-img" id="healthcareMainImg" />
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-glass open-gallery-btn" data-gallery="healthcare">
+                  <i data-lucide="images"></i>
+                  <span data-i18n="btn_view_gallery">View Full Gallery (9 Images)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Mini Screenshot Thumbnails Strip -->
+            <div class="project-thumb-strip">
+              <img src="assets/images/healthcare-menu.jpg" alt="Healthcare Overview" class="thumb-item active" onclick="switchMainImage('healthcareMainImg', this.src, this)" />
+              <img src="assets/images/healthcare-demographics.jpg" alt="Demographics" class="thumb-item" onclick="switchMainImage('healthcareMainImg', this.src, this)" />
+              <img src="assets/images/healthcare-operations.jpg" alt="Operations" class="thumb-item" onclick="switchMainImage('healthcareMainImg', this.src, this)" />
+              <img src="assets/images/healthcare-clinical.jpg" alt="Clinical" class="thumb-item" onclick="switchMainImage('healthcareMainImg', this.src, this)" />
+              <img src="assets/images/healthcare-financial.jpg" alt="Financial" class="thumb-item" onclick="switchMainImage('healthcareMainImg', this.src, this)" />
+              <img src="assets/images/healthcare-schema.jpg" alt="Data Schema" class="thumb-item" onclick="switchMainImage('healthcareMainImg', this.src, this)" />
+              <img src="assets/images/healthcare-feature-importance.jpg" alt="ML Risk Feature" class="thumb-item" onclick="switchMainImage('healthcareMainImg', this.src, this)" />
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="proj-year">2026</span>
+                <span class="proj-category">Power BI • DAX • Python • SQL Server</span>
+              </div>
+              <h3 class="project-title" data-i18n="p1_title">Healthcare Operational & Clinical Analytics Dashboard</h3>
+              <p class="project-desc" data-i18n="p1_desc">
+                Comprehensive healthcare intelligence system modeling operational, demographic, and financial data covering 5,855+ medical providers and 53,000+ patient encounters.
+              </p>
+
+              <!-- Key Achievements Grid -->
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p1_h1">Built 12 dynamic KPI metrics in Power BI using advanced DAX.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p1_h2">Identified potential 8% cost reduction across $895M+ in patient expenses.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p1_h3">Constructed a robust Star Schema relational model with 11 interlinked tables.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p1_h4">Integrated Python ML feature importance models for patient risk prediction.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span>Power BI</span><span>DAX Formulas</span><span>Python</span><span>SQL Server</span><span>Data Modeling</span><span>Matplotlib</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-primary btn-sm open-details-btn" data-project="healthcare">
+                  <i data-lucide="eye"></i>
+                  <span data-i18n="btn_deep_dive">Case Study & Gallery</span>
+                </button>
+                <a href="https://github.com/Ismail-Mahmoud-Mohamed" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Food Delivery Data Analysis & Predictive Modeling -->
+          <div class="project-card" data-category="ml">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-food-delivery.jpg" alt="Food Delivery Analytics Dashboard" class="project-cover-img" />
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-glass open-modal-img" data-img="assets/images/project-food-delivery.jpg" data-caption="Food Delivery Analytics & Delay Reduction Model">
+                  <i data-lucide="zoom-in"></i>
+                  <span data-i18n="btn_zoom">View Image</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="proj-year">2026 (ITI)</span>
+                <span class="proj-category">Python • Pandas • Machine Learning</span>
+              </div>
+              <h3 class="project-title" data-i18n="p2_title">Food Delivery Delay Optimization & Predictive Analytics</h3>
+              <p class="project-desc" data-i18n="p2_desc">
+                Full-cycle data science solution analyzing 45,593 records across 20 attributes to predict delivery delays, optimize fleet dispatch, and evaluate order clustering during peak periods.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p2_h1">Achieved 99.2% data cleanliness by systematically resolving anomalies.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p2_h2">Engineered preparation time & spatial distance features, reducing delay metrics by 15%.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p2_h3">Executed correlation matrices & regression models to balance peak order loads.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span><span>Matplotlib</span><span>EDA</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm open-modal-img" data-img="assets/images/project-food-delivery.jpg" data-caption="Food Delivery Analytics & Delay Reduction Model">
+                  <i data-lucide="maximize"></i>
+                  <span data-i18n="btn_preview">Preview Dashboard</span>
+                </button>
+                <a href="https://github.com/Ismail-Mahmoud-Mohamed" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Automotive Sales Market Analysis -->
+          <div class="project-card" data-category="bi ml">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-car-sales.jpg" alt="Automotive Sales & Pricing Intelligence" class="project-cover-img" />
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-glass open-modal-img" data-img="assets/images/project-car-sales.jpg" data-caption="Global Automotive Sales & Pricing Analysis Dashboard">
+                  <i data-lucide="zoom-in"></i>
+                  <span data-i18n="btn_zoom">View Image</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="proj-year">2026 (DEPI)</span>
+                <span class="proj-category">Python • Pandas • Market Analytics</span>
+              </div>
+              <h3 class="project-title" data-i18n="p3_title">Automotive Sales & Pricing Dynamics Intelligence</h3>
+              <p class="project-desc" data-i18n="p3_desc">
+                In-depth market intelligence project processing 23,000+ car sales records to map price depreciation trends across vehicle age and brand market dominance.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p3_h1">Extracted price elasticity and resale depreciation curves across leading brands.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p3_h2">Identified key regional sales drivers and high-demand automobile segments.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Statistical Modeling</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm open-modal-img" data-img="assets/images/project-car-sales.jpg" data-caption="Global Automotive Sales & Pricing Analysis Dashboard">
+                  <i data-lucide="maximize"></i>
+                  <span data-i18n="btn_preview">Preview Dashboard</span>
+                </button>
+                <a href="https://github.com/Ismail-Mahmoud-Mohamed" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: Coffee Shop Retail Transactions & Consumer Behavior -->
+          <div class="project-card" data-category="bi ml">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-coffee-sales.jpg" alt="Coffee Transactions & Consumer Behavior" class="project-cover-img" />
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-glass open-modal-img" data-img="assets/images/project-coffee-sales.jpg" data-caption="Retail Sales & Consumer Behavior Analytics">
+                  <i data-lucide="zoom-in"></i>
+                  <span data-i18n="btn_zoom">View Image</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="proj-year">2026 (DEPI)</span>
+                <span class="proj-category">Python • EDA • Consumer Insights</span>
+              </div>
+              <h3 class="project-title" data-i18n="p4_title">Retail POS & Consumer Behavior Analytics</h3>
+              <p class="project-desc" data-i18n="p4_desc">
+                Exploratory data study on 3,500+ commercial coffee shop transactions, modeling customer ordering velocity, peak staffing hours, and cashless payment adoptions.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p4_h1">Determined hourly rush velocity to optimize barista scheduling and inventory readiness.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p4_h2">Analyzed revenue correlation between product categories and payment types.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span>Python</span><span>Data Mining</span><span>Power BI</span><span>Excel</span><span>Heatmap Analysis</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm open-modal-img" data-img="assets/images/project-coffee-sales.jpg" data-caption="Retail Sales & Consumer Behavior Analytics">
+                  <i data-lucide="maximize"></i>
+                  <span data-i18n="btn_preview">Preview Dashboard</span>
+                </button>
+                <a href="https://github.com/Ismail-Mahmoud-Mohamed" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: Books Web Scraping & Data Pipeline -->
+          <div class="project-card" data-category="scraping">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-web-scraping.jpg" alt="Automated Web Scraping Pipeline" class="project-cover-img" />
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-glass open-modal-img" data-img="assets/images/project-web-scraping.jpg" data-caption="Automated Web Scraping & ETL Pipeline">
+                  <i data-lucide="zoom-in"></i>
+                  <span data-i18n="btn_zoom">View Image</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="proj-year">2026</span>
+                <span class="proj-category">Python • BeautifulSoup • ETL Pipeline</span>
+              </div>
+              <h3 class="project-title" data-i18n="p5_title">Automated Web Scraping & Data Pipeline</h3>
+              <p class="project-desc" data-i18n="p5_desc">
+                Custom Python web scraper that systematically extracts, normalizes, and stores catalog datasets across 50 dynamic web pages, delivering production-grade clean CSV outputs.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p5_h1">Extracted 1,000+ structured book entries with automated pagination handling.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span data-i18n="p5_h2">Delivered 100% complete CSV datasets with zero missing values or data corruption.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span>Python</span><span>BeautifulSoup</span><span>Requests</span><span>Pandas</span><span>HTML Parsing</span><span>ETL</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm open-modal-img" data-img="assets/images/project-web-scraping.jpg" data-caption="Automated Web Scraping & ETL Pipeline">
+                  <i data-lucide="maximize"></i>
+                  <span data-i18n="btn_preview">Preview Pipeline</span>
+                </button>
+                <a href="https://github.com/Ismail-Mahmoud-Mohamed" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES SECTION ==================== -->
+    <section class="section cert-section" id="certificates">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tag_certificates">OFFICIAL ACCREDITATIONS</span>
+          <h2 class="section-title"><span data-i18n="cert_title_1">Licenses &</span> <span class="text-gradient" data-i18n="cert_title_2">Certificates</span></h2>
+          <p class="section-subtitle" data-i18n="cert_subtitle">Verified certificates from leading Egyptian institutes and international contests.</p>
+        </div>
+
+        <div class="certs-grid">
+
+          <!-- Certificate 1: NTI 100% Advanced Data Analytics -->
+          <div class="cert-card cert-featured">
+            <div class="cert-ribbon" data-i18n="cert_ribbon_top">100% Top Score</div>
+            <div class="cert-img-container">
+              <img src="assets/images/cert-nti-100.jpg" alt="NTI Advanced Data Analytics Certificate" class="cert-img" />
+              <div class="cert-hover-overlay">
+                <button class="btn btn-glass btn-sm open-modal-img" data-img="assets/images/cert-nti-100.jpg" data-caption="NTI Certificate of Training - Advanced Data Analytics (Score: 100%, 120 Hours, Student ID: 231567)">
+                  <i data-lucide="zoom-in"></i>
+                  <span data-i18n="btn_view_cert">Enlarge Certificate</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="cert-info">
+              <div class="cert-meta">
+                <span class="cert-issuer">NTI & ITIDA</span>
+                <span class="cert-date">June – July 2026</span>
+              </div>
+              <h3 class="cert-name" data-i18n="cert1_name">Advanced Data Analytics — Summer Training</h3>
+              <p class="cert-desc" data-i18n="cert1_desc">
+                Awarded by the National Telecommunication Institute (NTI) and ITIDA. Successfully completed 120 hours of hands-on data cleaning, SQL transformation, Power BI, and DAX dashboard development with a perfect <strong>100% score</strong> (Student ID: 231567).
+              </p>
+
+              <div class="cert-actions">
+                <button class="btn btn-primary btn-sm open-modal-img" data-img="assets/images/cert-nti-100.jpg" data-caption="NTI Certificate of Training - Advanced Data Analytics (Score: 100%)">
+                  <i data-lucide="eye"></i>
+                  <span data-i18n="btn_view">View</span>
+                </button>
+                <a href="assets/docs/cert-nti-advanced-data.pdf" download class="btn btn-outline btn-sm">
+                  <i data-lucide="download"></i>
+                  <span data-i18n="btn_pdf">Download PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2: ICPC Contest -->
+          <div class="cert-card">
+            <div class="cert-img-container">
+              <img src="assets/images/cert-icpc.jpg" alt="ICPC Certificate of Achievement" class="cert-img" />
+              <div class="cert-hover-overlay">
+                <button class="btn btn-glass btn-sm open-modal-img" data-img="assets/images/cert-icpc.jpg" data-caption="ICPC ACPC Kickoff Online Individual Contest - Honorable Mention">
+                  <i data-lucide="zoom-in"></i>
+                  <span data-i18n="btn_view_cert">Enlarge Certificate</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="cert-info">
+              <div class="cert-meta">
+                <span class="cert-issuer">ICPC Foundation</span>
+                <span class="cert-date">April 2025</span>
+              </div>
+              <h3 class="cert-name" data-i18n="cert2_name">ICPC ACPC Kickoff Contest — Honorable Mention</h3>
+              <p class="cert-desc" data-i18n="cert2_desc">
+                Awarded to Ismail Abo Zaid by the ICPC Executive Director William B. Poucher (Assiut University) for distinguished algorithmic problem solving and placement in the top 30% nationally.
+              </p>
+
+              <div class="cert-actions">
+                <button class="btn btn-outline btn-sm open-modal-img" data-img="assets/images/cert-icpc.jpg" data-caption="ICPC ACPC Kickoff Online Individual Contest - Honorable Mention">
+                  <i data-lucide="eye"></i>
+                  <span data-i18n="btn_view">View</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 3: ITIDA Gigs -->
+          <div class="cert-card">
+            <div class="cert-img-container">
+              <img src="assets/images/cert-itida-gigs.jpg" alt="ITIDA Gigs Graduation Certificate" class="cert-img" />
+              <div class="cert-hover-overlay">
+                <button class="btn btn-glass btn-sm open-modal-img" data-img="assets/images/cert-itida-gigs.jpg" data-caption="ITIDA Gigs 3-Month Freelance Training Program - Certified Freelancer">
+                  <i data-lucide="zoom-in"></i>
+                  <span data-i18n="btn_view_cert">Enlarge Certificate</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="cert-info">
+              <div class="cert-meta">
+                <span class="cert-issuer">ITIDA & eyouth</span>
+                <span class="cert-date">2026</span>
+              </div>
+              <h3 class="cert-name" data-i18n="cert3_name">ITIDA Gigs Freelance Training Graduate</h3>
+              <p class="cert-desc" data-i18n="cert3_desc">
+                Graduated from the intensive 3-month ITIDA Gigs freelance training program, certifying professional skills in client communication, remote contract delivery, and technical project execution.
+              </p>
+
+              <div class="cert-actions">
+                <button class="btn btn-outline btn-sm open-modal-img" data-img="assets/images/cert-itida-gigs.jpg" data-caption="ITIDA Gigs 3-Month Freelance Training Program - Certified Freelancer">
+                  <i data-lucide="eye"></i>
+                  <span data-i18n="btn_view">View</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tag_skills">TECHNICAL TOOLKIT</span>
+          <h2 class="section-title"><span data-i18n="skills_title_1">Skills &</span> <span class="text-gradient" data-i18n="skills_title_2">Competencies</span></h2>
+          <p class="section-subtitle" data-i18n="skills_subtitle">Comprehensive breakdown of programming languages, analytics libraries, and BI tools.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Programming & Querying -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon icon-cyan"><i data-lucide="terminal"></i></div>
+              <h3 data-i18n="cat_prog">Programming & Querying</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item"><span class="tag-name">Python</span><span class="tag-level">Advanced</span></div>
+              <div class="skill-tag-item"><span class="tag-name">SQL (SQL Server)</span><span class="tag-level">Advanced</span></div>
+              <div class="skill-tag-item"><span class="tag-name">C++</span><span class="tag-level">Algorithms</span></div>
+              <div class="skill-tag-item"><span class="tag-name">JavaScript</span><span class="tag-level">Intermediate</span></div>
+            </div>
+          </div>
+
+          <!-- Category 2: Data Analysis & Manipulation -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon icon-teal"><i data-lucide="file-spreadsheet"></i></div>
+              <h3 data-i18n="cat_analysis">Data Analysis & Modeling</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item"><span class="tag-name">Pandas</span></div>
+              <div class="skill-tag-item"><span class="tag-name">NumPy</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Exploratory Data Analysis (EDA)</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Data Cleaning & Preparation</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Statistical Analysis</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Relational Data Modeling</span></div>
+            </div>
+          </div>
+
+          <!-- Category 3: BI & Visualization -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon icon-amber"><i data-lucide="bar-chart"></i></div>
+              <h3 data-i18n="cat_bi">Business Intelligence & Viz</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item"><span class="tag-name">Microsoft Power BI</span><span class="tag-level">Expert</span></div>
+              <div class="skill-tag-item"><span class="tag-name">DAX Calculations</span><span class="tag-level">Advanced</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Tableau</span><span class="tag-level">Proficient</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Matplotlib & Seaborn</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Microsoft Excel (Advanced)</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Executive KPI Dashboards</span></div>
+            </div>
+          </div>
+
+          <!-- Category 4: Machine Learning & AI -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon icon-purple"><i data-lucide="brain"></i></div>
+              <h3 data-i18n="cat_ml">Machine Learning & AI</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item"><span class="tag-name">Predictive Modeling</span></div>
+              <div class="skill-tag-item"><span class="tag-name">ML Fundamentals</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Deep Learning Basics</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Neural Networks</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Linear Algebra for ML</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Feature Importance</span></div>
+            </div>
+          </div>
+
+          <!-- Category 5: Web Scraping & Platforms -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon icon-rose"><i data-lucide="cpu"></i></div>
+              <h3 data-i18n="cat_tools">Scraping, Tools & Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item"><span class="tag-name">BeautifulSoup</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Python Requests</span></div>
+              <div class="skill-tag-item"><span class="tag-name">HTML Parsing</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Google Colab & Jupyter</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Git & GitHub</span></div>
+              <div class="skill-tag-item"><span class="tag-name">Airtable & Zid Platform</span></div>
+            </div>
+          </div>
+
+          <!-- Category 6: Soft Skills & Teamwork -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon icon-emerald"><i data-lucide="check-check"></i></div>
+              <h3 data-i18n="cat_soft">Professional Soft Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item"><span class="tag-name" data-i18n="soft1">Problem Solving & Critical Thinking</span></div>
+              <div class="skill-tag-item"><span class="tag-name" data-i18n="soft2">Leadership & Team Coordination</span></div>
+              <div class="skill-tag-item"><span class="tag-name" data-i18n="soft3">Communication & Presentation</span></div>
+              <div class="skill-tag-item"><span class="tag-name" data-i18n="soft4">Adaptability & Fast Learning</span></div>
+              <div class="skill-tag-item"><span class="tag-name" data-i18n="soft5">Time Management Under Pressure</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tag_contact">START A CONVERSATION</span>
+          <h2 class="section-title"><span data-i18n="contact_title_1">Let's Connect &</span> <span class="text-gradient" data-i18n="contact_title_2">Collaborate</span></h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">Available for full-time positions, internships, and freelance data analytics projects.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title" data-i18n="contact_direct_title">Direct Contact Information</h3>
+            <p class="contact-info-desc" data-i18n="contact_direct_desc">
+              Feel free to reach out directly via phone, WhatsApp, email, or LinkedIn. I typically respond within a few hours.
+            </p>
+
+            <div class="contact-items-list">
+              <a href="mailto:ismaeilabozaid7497@gmail.com" class="contact-item-row">
+                <div class="contact-item-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <span class="contact-item-label" data-i18n="contact_email_lbl">Email Address</span>
+                  <span class="contact-item-val">ismaeilabozaid7497@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/201094360362" target="_blank" rel="noopener" class="contact-item-row">
+                <div class="contact-item-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <span class="contact-item-label" data-i18n="contact_phone_lbl">Phone & WhatsApp</span>
+                  <span class="contact-item-val">+20 109 436 0362</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/ismaeilmahmoud" target="_blank" rel="noopener" class="contact-item-row">
+                <div class="contact-item-icon"><i data-lucide="linkedin"></i></div>
+                <div>
+                  <span class="contact-item-label">LinkedIn</span>
+                  <span class="contact-item-val">linkedin.com/in/ismaeilmahmoud</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/Ismail-Mahmoud-Mohamed" target="_blank" rel="noopener" class="contact-item-row">
+                <div class="contact-item-icon"><i data-lucide="github"></i></div>
+                <div>
+                  <span class="contact-item-label">GitHub</span>
+                  <span class="contact-item-val">github.com/Ismail-Mahmoud-Mohamed</span>
+                </div>
+              </a>
+
+              <div class="contact-item-row no-hover">
+                <div class="contact-item-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <span class="contact-item-label" data-i18n="contact_location_lbl">Location</span>
+                  <span class="contact-item-val" data-i18n="contact_location_val">Cairo, Egypt (Open to Remote Globally)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-cv-box">
+              <div>
+                <strong data-i18n="contact_cv_prompt">Need my complete resume?</strong>
+                <p data-i18n="contact_cv_sub">Download the official PDF format.</p>
+              </div>
+              <a href="assets/docs/Ismail-Mahmoud-CV.pdf" download class="btn btn-sm btn-primary">
+                <i data-lucide="download"></i>
+                <span data-i18n="btn_download_cv">Download CV</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card">
+            <h3 class="form-title" data-i18n="form_title">Send Me a Message</h3>
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="name" data-i18n="form_name">Your Name</label>
+                <div class="input-with-icon">
+                  <i data-lucide="user"></i>
+                  <input type="text" id="name" required placeholder="John Doe" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-i18n="form_email">Your Email</label>
+                <div class="input-with-icon">
+                  <i data-lucide="mail"></i>
+                  <input type="email" id="email" required placeholder="john@example.com" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" data-i18n="form_subject">Subject / Project Type</label>
+                <div class="input-with-icon">
+                  <i data-lucide="tag"></i>
+                  <input type="text" id="subject" placeholder="Data Analytics / Job Opportunity" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-i18n="form_message">Message</label>
+                <div class="input-with-icon input-textarea">
+                  <i data-lucide="message-square"></i>
+                  <textarea id="message" rows="4" required placeholder="Tell me about your requirements, project, or role..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-full" id="submitBtn">
+                <span data-i18n="form_send_btn">Send Message</span>
+                <i data-lucide="send"></i>
+              </button>
+
+              <div id="formFeedback" class="form-feedback hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-code">&lt;</span>
+          <span class="logo-text">IM</span>
+          <span class="logo-accent">.Data</span>
+          <span class="logo-code">/&gt;</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer_tagline">
+          Ismail Mahmoud Mohamed — Transforming data into strategic intelligence.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#experience" data-i18n="nav_experience">Experience</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#certificates" data-i18n="nav_certificates">Certificates</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ismail Mahmoud Mohamed. All rights reserved.</p>
+        <p class="footer-credit">Faculty of Computers & Information, Assiut University</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL / LIGHTBOX ==================== -->
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox-modal" id="imageModal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeImageModal()"></div>
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeImageModal()" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body">
+        <img src="" alt="" id="modalImg" class="modal-image" />
+        <p class="modal-caption" id="modalCaption"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Healthcare Case Study Gallery Modal -->
+  <div class="lightbox-modal gallery-modal" id="galleryModal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeGalleryModal()"></div>
+    <div class="modal-container modal-wide">
+      <button class="modal-close" onclick="closeGalleryModal()" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="gallery-modal-header">
+        <span class="gallery-badge">Comprehensive Project Breakdown</span>
+        <h3 id="galleryTitle">Healthcare Operational & Clinical Analytics (Power BI + Python + DAX)</h3>
+        <p id="gallerySubtitle">5,855+ Providers • 53,000+ Encounters • $895M+ Healthcare Expenses Modeled</p>
+      </div>
+
+      <div class="gallery-modal-content">
+        <!-- Main Slide View -->
+        <div class="gallery-main-view">
+          <img src="assets/images/healthcare-menu.jpg" id="galleryActiveImg" alt="Healthcare Analytics View" />
+          <div class="gallery-caption-bar" id="galleryCaption">
+            <strong>Screen 1 / 8:</strong> Dashboard Menu & Navigation Hub
+          </div>
+        </div>
+
+        <!-- Thumbnails Strip inside Modal -->
+        <div class="gallery-thumbs-row">
+          <button class="g-thumb active" onclick="setGallerySlide(0, 'assets/images/healthcare-menu.jpg', 'Dashboard Welcome & Main Operational Hub', 'Clean landing portal allowing navigation between demographics, operational efficiency, clinical insight, and financial cost metrics.')">
+            <img src="assets/images/healthcare-menu.jpg" alt="Menu" />
+            <span>Welcome Hub</span>
+          </button>
+          <button class="g-thumb" onclick="setGallerySlide(1, 'assets/images/healthcare-demographics.jpg', 'Patient Demographics & Geo Distribution', 'Analyzed 1.171K patients across counties, age distribution brackets (Senior 390, Adult 354, Young Adult 277), and gender breakdown (52% F, 48% M).')">
+            <img src="assets/images/healthcare-demographics.jpg" alt="Demographics" />
+            <span>Demographics</span>
+          </button>
+          <button class="g-thumb" onclick="setGallerySlide(2, 'assets/images/healthcare-operations.jpg', 'Healthcare Operations & Provider Specialities', 'Operational analysis of 53.35K encounters, 5,855 providers across General Practice, Internal Medicine, and Nurse Practitioners, highlighting facility workload.')">
+            <img src="assets/images/healthcare-operations.jpg" alt="Operations" />
+            <span>Operations</span>
+          </button>
+          <button class="g-thumb" onclick="setGallerySlide(3, 'assets/images/healthcare-clinical.jpg', 'Clinical Insights & Medication Diagnoses', 'Clinical review covering 1.152K conditions, 1.107K medications, immunizations (Influenza 78.6%), and common allergic reactions.')">
+            <img src="assets/images/healthcare-clinical.jpg" alt="Clinical" />
+            <span>Clinical</span>
+          </button>
+          <button class="g-thumb" onclick="setGallerySlide(4, 'assets/images/healthcare-financial.jpg', 'Financial Analytics & Out-of-Pocket Cost', 'Modeled $896M in total expenses with $881M out-of-pocket costs, discovering claim patterns across encounter classes and top medication drivers.')">
+            <img src="assets/images/healthcare-financial.jpg" alt="Financial" />
+            <span>Financial</span>
+          </button>
+          <button class="g-thumb" onclick="setGallerySlide(5, 'assets/images/healthcare-schema.jpg', 'Star Schema Relational Data Architecture', 'Complex multi-table data modeling diagram in Power BI linking 11 fact and dimension tables (Patients, Encounters, Providers, Payers, Conditions, Medications, etc.).')">
+            <img src="assets/images/healthcare-schema.jpg" alt="Data Schema" />
+            <span>Star Schema</span>
+          </button>
+          <button class="g-thumb" onclick="setGallerySlide(6, 'assets/images/healthcare-eda.jpg', 'Python Exploratory Data Distributions', 'Kernel Density and histogram distributions of patient ages and healthcare costs generated with Python Seaborn and Matplotlib.')">
+            <img src="assets/images/healthcare-eda.jpg" alt="Python EDA" />
+            <span>Python EDA</span>
+          </button>
+          <button class="g-thumb" onclick="setGallerySlide(7, 'assets/images/healthcare-correlation.jpg', 'Feature Correlation Heatmap', 'Statistical correlation matrix identifying key dependencies between patient age, total conditions, and medical costs.')">
+            <img src="assets/images/healthcare-correlation.jpg" alt="Correlation" />
+            <span>Correlation</span>
+          </button>
+          <button class="g-thumb" onclick="setGallerySlide(8, 'assets/images/healthcare-feature-importance.jpg', 'Machine Learning Feature Importance', 'Predictive risk model identifying the top 5 most important drivers for clinical risk: Age (52%), Coverage, Medications, Encounters, and Conditions.')">
+            <img src="assets/images/healthcare-feature-importance.jpg" alt="ML Importance" />
+            <span>ML Importance</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
